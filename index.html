@@ -1,0 +1,105 @@
+hello
+
+<style>
+  .flex-container {
+    width: 11em;
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex-wrap: wrap;
+    align-content: center;
+
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .flex-container>div {
+    flex: 0.5;
+    width: 100%;
+    border: 2px solid blue;
+    background-color: skyblue;
+
+    text-align: center;
+    line-height: 20px;
+  }
+
+  .table-main {
+    width: 50%;
+  }
+
+  .table-main__head>th {
+    border: 1px solid red;
+    background: black;
+    color: white;
+  }
+
+  .flex-div {
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-content: flex-end;
+  }
+
+  .flex-div>div {
+    height: 20px;
+
+    text-align: center;
+
+    border: 1px solid blue;
+    flex: 0.3;
+    height: 3em;
+    background-color: yellow;
+  }
+
+  .flex-div div>div {
+    width: 100px;
+    background-color: red;
+  }
+</style>
+
+<h2>Test</h2>
+
+
+<div class='flex-container'>
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+
+<table class='table-main'>
+  <tr class='table-main__head'>
+    <th>column1</th>
+    <th>column2</th>
+    <th>column3</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>11</td>
+    <td>111</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>22</td>
+    <td>222</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>33</td>
+    <td>333</td>
+  </tr>
+</table>
+
+<div class='flex-div'>
+  <div>
+    <div>1</div>
+  </div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
